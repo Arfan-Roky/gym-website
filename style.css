@@ -1,4 +1,153 @@
-body{
-    font-family: 'Caveat', cursive;
-font-family: 'Yanone Kaffeesatz', sans-serif
+body,
+html {
+  height: 100%;
+}
+
+body {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  width: 80%;
+  margin: 0 auto;
+  background-image: linear-gradient(90deg, lightsalmon, lightseagreen);
+}
+
+.half {
+  width: 40%;
+}
+
+.joinUs {
+  padding: 1rem 2rem;
+  padding-right: 0;
+}
+
+.optionHeading {
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-family: 'Caveat', cursive;
+  font-weight: bold;
+  box-shadow: 5px 5px 40px lightseagreen;
+  margin-left: 1.3rem;
+  padding: 6px 0 0 6px;
+  width: 120px;
+}
+.mb {
+  margin: 1rem;
+  font-size: 1.2rem;
+  color: white;
+  margin-bottom: 2rem;
+}
+
+.headerInfo {
+  padding: 1rem 2rem;
+}
+
+.mainHeading {
+  font-family: 'Caveat', cursive;
+  font-size: 4rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.minHeading {
+  font-size: 2.2rem;
+  text-transform: capitalize;
+}
+
+.headerDes {
+  line-height: 1.3;
+  font-size: 1.2;
+  letter-spacing: 0.9px;
+  color: white;
+}
+
+.lightColor {
+  color: rgb(32, 34, 178);
+}
+
+.linkButton {
+  text-decoration: none;
+  padding: 10px 30px;
+  background-image: linear-gradient(90deg, lightseagreen, lightsalmon);
+  border-radius: 8px;
+  font-size: 1.4rem;
+  color: white;
+}
+
+.btn {
+  margin-left: 1.3rem;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 80%;
+  min-height: 100vh;
+  margin: 0 auto;
+  background-image: linear-gradient(90deg, black, black);
+}
+
+.box {
+  margin-top: 4rem;
+  width: 300px;
+  height: 450px;
+  overflow: hidden;
+  border-left: 3px solid;
+  border-right: 3px solid;
+  border-image: linear-gradient(salmon, lightseagreen);
+  border-image-slice: 1;
+}
+
+.box:hover img {
+  transform: scale(1.1);
+}
+
+.boxInfo {
+  padding: 0 1rem;
+  color: white;
+}
+.box img {
+  width: 100%;
+  height: 40%;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 200ms ease-in-out;
+}
+
+.boxTitle {
+  color: salmon;
+  font-size: 1.4rem;
+  font-family: 'Caveat', cursive;
+  font-weight: bold;
+}
+
+.boxDes {
+  line-height: 1.1;
+  letter-spacing: 1px;
+  color: #fffafa9d;
+  margin: 0 0 2rem 0;
+}
+
+.box .outlineBtn {
+  text-decoration: none;
+  padding: 10px 30px;
+  color: black;
+  border: 2px solid salmon;
+  outline: 2px solid black;
+  transition: outline-offset 200ms ease-in-out;
+  background: salmon;
+  font-size: 1.3rem;
+}
+
+.outlineBtn:hover,
+.outlineBtn:focus {
+  outline-offset: -8px;
 }
